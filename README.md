@@ -1,6 +1,17 @@
+# HQDM Model Extension Example
+
+This project builds a JAR file with a small extension to the main HQDM model provided by MagmaCore. It provides
+an SPI Service that can be detected by MagmaCore as a model extenstion, and provides the `UkLimitedCompany` entity type
+as a subtype of `Organization`. This allows MagmaCore to be extended without changing the core library.
+
 # How to Use
 
-This section shows how to use the model extension with MagmaCore.
+This section shows how to use the model extension in an application with MagmaCore.
+
+1. Build this project, or your own model extension project, to create a JAR file.
+2. Ensure the JAR file is on the class path for your application.
+3. Follow the example below for how to use the extension entity types with MagmaCore.
+4. MagmaCore will find the extension and use it as if the classes were part of HQDM.
 
 The example creates and persists an entity from the extension JAR, then reads it from the database and compares it to the original.
 
