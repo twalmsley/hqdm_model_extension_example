@@ -1,5 +1,5 @@
-module com.elemendar.hqdm.ext {
-    exports com.elemendar.hqdm.ext;
+module com.example.hqdm.ext {
+    exports com.example.hqdm.ext;
 
     requires transitive uk.gov.gchq.magmacore.hqdm;
 }

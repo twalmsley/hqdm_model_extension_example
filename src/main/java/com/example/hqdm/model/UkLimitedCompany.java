@@ -1,4 +1,4 @@
-package com.elemendar.hqdm.model;
+package com.example.hqdm.model;
 
 import uk.gov.gchq.magmacore.hqdm.model.Organization;
 

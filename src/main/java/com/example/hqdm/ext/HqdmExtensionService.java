@@ -1,7 +1,7 @@
-package com.elemendar.hqdm.ext;
+package com.example.hqdm.ext;
 
-import com.elemendar.hqdm.model.Ext;
-import com.elemendar.hqdm.model.UkLimitedCompanyImpl;
+import com.example.hqdm.model.Constants;
+import com.example.hqdm.model.UkLimitedCompanyImpl;
 
 import uk.gov.gchq.magmacore.hqdm.extensions.ExtensionService;
 import uk.gov.gchq.magmacore.hqdm.model.Thing;
@@ -15,9 +15,9 @@ public class HqdmExtensionService implements ExtensionService {
 
         // Check the type name and return an appropriate instance.
         //
-		if (Ext.UK_LIMITED_COMPANY_TYPE_NAME.equals(typeName)) {
+		if (Constants.UK_LIMITED_COMPANY_TYPE_NAME.equals(typeName)) {
             final var result = new UkLimitedCompanyImpl(iri);
-            result.addValue(RDFS.RDF_TYPE, Ext.UK_LIMITED_COMPANY_IRI);
+            result.addValue(RDFS.RDF_TYPE, Constants.UK_LIMITED_COMPANY_IRI);
             return result;
         }
 
