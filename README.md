@@ -2,7 +2,8 @@
 
 This project builds a JAR file with a small extension to the main HQDM model provided by MagmaCore. It provides
 an SPI Service that can be detected by MagmaCore as a model extenstion, and provides the `UkLimitedCompany` entity type
-as a subtype of `Organization`. This allows MagmaCore to be extended without changing the core library.
+as a subtype of `Organization`, and the `UkSoftwareDevelopmentCompany` as a subtype of `UkLimitedCompany`. 
+This allows MagmaCore to be extended without changing the core library.
 
 # How to Use
 
